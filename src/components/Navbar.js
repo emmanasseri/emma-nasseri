@@ -1,27 +1,28 @@
 import React from "react";
 import Link from "next/link";
+import OutlineButton from "./OutlineButton";
 
 const Navbar = () => {
   return (
-    <nav className={styles.navbar}>
+    <nav style={styles.navbar}>
       <Link href="/" className={styles.navItem}>
-        Home
+        <OutlineButton title="home" />
       </Link>
-      <div className={styles.rightMenu}>
-        <Link href="/cs" className={styles.navItem}>
-          About Me
+      <div style={styles.rightMenu}>
+        <Link href="/cs" style={styles.navItem}>
+          <OutlineButton title="about me" />
         </Link>
-        <Link href="/cs" className={styles.navItem}>
-          Contact
+        <Link href="/cs" style={styles.navItem}>
+          <OutlineButton title="contact" />
         </Link>
-        <Link href="/cs" className={styles.navItem}>
-          CS
+        <Link href="/cs" style={styles.navItem}>
+          <OutlineButton title="compsci" />
         </Link>
-        <Link href="/writing" className={styles.navItem}>
-          Writing
+        <Link href="/writing" style={styles.navItem}>
+          <OutlineButton title="writing" />
         </Link>
-        <Link href="/art" className={styles.navItem}>
-          Art
+        <Link href="/art" style={styles.navItem}>
+          <OutlineButton title="art" />
         </Link>
       </div>
     </nav>
@@ -34,13 +35,14 @@ const styles = {
   navbar: {
     display: "flex",
     justifyContent: "space-between",
-    backgroundColor: "#333",
+    alignItems: "center",
+    width: "100%", // Ensure the navbar takes up the full width
+
     padding: "10px 0",
     borderBottom: "1px solid black",
   },
   rightMenu: {
     display: "flex",
-    justifyContent: "flex-end",
     alignItems: "center",
   },
   navItem: {

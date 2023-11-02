@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 //import { Lato } from "next/font/google";
-import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 //const lato = Lato({ subsets: ["latin"], weights: [100, 300, 400, 700, 900] });

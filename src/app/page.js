@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Navbar />
       <div>
-        =<h1>Hello, I'm Emma</h1>
+        <h1>Hello, I'm Emma</h1>
         <p>
           Welcome to my personal website! I am a 3rd year student passionate
           about [Your Interests/Skills]. Here you will find my projects,
