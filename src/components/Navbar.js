@@ -9,10 +9,10 @@ const Navbar = () => {
         <OutlineButton title="home" />
       </Link>
       <div style={styles.rightMenu}>
-        <Link href="/cs" style={styles.navItem}>
+        <Link href="/#about" style={styles.navItem}>
           <OutlineButton title="about me" />
         </Link>
-        <Link href="/cs" style={styles.navItem}>
+        <Link href="/#contact" style={styles.navItem}>
           <OutlineButton title="contact" />
         </Link>
         <Link href="/cs" style={styles.navItem}>
