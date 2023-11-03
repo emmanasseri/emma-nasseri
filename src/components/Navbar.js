@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import OutlineButton from "./OutlineButton";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -39,7 +40,6 @@ const styles = {
     width: "100%", // Ensure the navbar takes up the full width
 
     padding: "10px 0",
-    borderBottom: "1px solid black",
   },
   rightMenu: {
     display: "flex",

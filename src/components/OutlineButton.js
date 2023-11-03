@@ -1,31 +1,56 @@
-import React, { Button } from "react";
+import React from "react";
+import Link from "next/link";
 
-const OutlineButton = ({ title, onClick }) => {
-  return (
-    <button style={styles.button} onClick={onClick ? onClick : undefined}>
-      {title}
-    </button>
-  );
+const OutlineButton = ({ title, onClick, link }) => {
+  if (link) {
+    return (
+      <Link href={link} style={styles.buttonLink}>
+        {title}
+      </Link>
+    );
+  }
+
+  if (onClick && typeof onClick === "function") {
+    return (
+      <button style={styles.button} onClick={onClick}>
+        {title}
+      </button>
+    );
+  }
+
+  return <button style={styles.button}>{title}</button>;
 };
 
 export default OutlineButton;
-
 const styles = {
   button: {
     border: "2px solid black",
-    borderRadius: "8px", // This gives the rounded edges
-    padding: "8px 16px", // Adjust as needed for button size
+    borderRadius: "8px",
+    padding: "8px 16px",
     backgroundColor: "transparent",
     color: "black",
     cursor: "pointer",
     outline: "none",
-    transition: "0.3s", // Smoothens the hover effect
+    transition: "0.3s",
     "&:hover": {
-      backgroundColor: "black", // Color when button is hovered
+      backgroundColor: "black",
       color: "white",
     },
   },
-  link: {
+  buttonLink: {
+    display: "inline-block",
+    border: "2px solid black",
+    borderRadius: "8px",
+    padding: "8px 16px",
+    backgroundColor: "transparent",
+    color: "black",
+    cursor: "pointer",
     textDecoration: "none",
+    outline: "none",
+    transition: "0.3s",
+    "&:hover": {
+      backgroundColor: "black",
+      color: "white",
+    },
   },
 };

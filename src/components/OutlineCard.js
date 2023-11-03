@@ -15,7 +15,7 @@ const OutlineCard = ({ title, description, imagePath, link }) => {
       </div>
       <span style={styles.title}>{title}</span>
       <span style={styles.body}>{description}</span>
-      <OutlineButton title="view project" onClick={link} />
+      <OutlineButton title="view project" link={link} />
     </div>
   );
 };
