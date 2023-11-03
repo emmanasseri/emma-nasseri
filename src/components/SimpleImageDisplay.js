@@ -11,6 +11,7 @@ const SimpleImageDisplay = ({
   medium,
   dimensions,
   date,
+  alt,
 }) => {
   return (
     <div style={styles.card}>
@@ -21,12 +22,7 @@ const SimpleImageDisplay = ({
           height: imageHeight,
         }}
       >
-        <Image
-          src={imagePath}
-          alt="Description for Accessibility"
-          layout="fill"
-          objectFit="cover"
-        />
+        <Image src={imagePath} alt={alt} layout="fill" objectFit="cover" />
       </div>
       <span style={styles.title}>{title}</span>
       <span style={styles.body}>{description}</span>
