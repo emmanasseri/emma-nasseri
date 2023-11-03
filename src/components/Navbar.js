@@ -28,20 +28,20 @@ const Navbar = () => {
       </Link>
 
       <div className={isDrawerOpen ? styles.drawer : styles.rightMenu}>
-        <Link href="/#about" className={styles.drawerItem}>
-          <OutlineButton title="about me" />
-        </Link>
         <Link href="/#contact" className={styles.drawerItem}>
           <OutlineButton title="contact" />
         </Link>
         <Link href="/cs" className={styles.drawerItem}>
-          <OutlineButton title="compsci" />
+          <OutlineButton title="coding" />
         </Link>
         <Link href="/writing" className={styles.drawerItem}>
           <OutlineButton title="writing" />
         </Link>
         <Link href="/art" className={styles.drawerItem}>
           <OutlineButton title="art" />
+        </Link>
+        <Link href="/reading" className={styles.drawerItem}>
+          <OutlineButton title="reading" />
         </Link>
       </div>
 

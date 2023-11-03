@@ -1,20 +1,23 @@
+" use client ";
+
 import React from "react";
 import Navbar from "@/components/Navbar";
-import OutlineCard from "@/components/OutlineCard";
+import Book from "@/components/Book";
 
 export default function CSPage() {
   return (
     <>
       <Navbar />
       <div style={styles.pageContainer}>
-        <h1 style={styles.centeredTitle}>here are a few of my projects.</h1>
+        <h1 style={styles.centeredTitle}>i love to read!</h1>
         <div style={styles.cardsContainer}>
-          <OutlineCard
-            title="sci fi book club"
-            description="meet the sci fi books i love and/or agree are important"
-            imagePath="/images/cs/spencerImage.png" // Path to your image
-            alt="image of the website" // Alt text for the image
-            link="https://github.com/KU-Blockchain/spencer-museum-collaboration"
+          <Book
+            imgSrc="/images/reading/endersgame.png"
+            title="Book Title"
+            author="Author Name"
+            yearLastRead="2022"
+            rating="5/5"
+            review="This book was fantastic!"
           />
         </div>
       </div>
