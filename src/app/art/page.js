@@ -30,17 +30,22 @@ export default function ArtPage() {
             imageHeight="500px"
           />
           <OutlineCard
-            title="Philosophical Chatbot"
-            description="this is totally a work in progress"
-            imagePath="/images/cs/chatbot.png" // Path to your image
+            title="2020 pandemic show"
+            description="a body of work i developed for a solo show in 2020"
+            imagePath="/images/art/wilcox.jpeg" // Path to your image
             alt="image of the website" // Alt text for the image
-            link="https://simple-chat-bot-smoky.vercel.app/"
+            link="https://attendthis.on.fleek.co/"
+            imageWidth="400px"
+            imageHeight="500px"
           />
           <OutlineCard
-            title="Interdisciplinary collaborations"
-            description="a choose your own adventure game"
-            imagePath="/images/cs/spencerImage.png" // Path to your image
+            title="sketches and studies"
+            description="other work from over the years"
+            imagePath="/images/art/wilcox.jpeg" // Path to your image
             alt="image of the website" // Alt text for the image
+            link="https://attendthis.on.fleek.co/"
+            imageWidth="400px"
+            imageHeight="500px"
           />
         </div>
       </div>
