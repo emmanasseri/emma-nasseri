@@ -43,7 +43,7 @@ export default function ArtPage() {
           <OutlineCard
             title="2020 pandemic show"
             description="a body of work i developed for a solo show in 2020"
-            imagePath="/images/art/deepDarkness.jpg" // Path to your image
+            imagePath="/images/art/youSawThatItWasGood.jpeg" // Path to your image
             alt="image of the website" // Alt text for the image
             link="/art/2020-show"
             imageWidth="500px"
@@ -52,7 +52,7 @@ export default function ArtPage() {
           <OutlineCard
             title="sketches and studies"
             description="other work from over the years"
-            imagePath="/images/art/Couch.jpeg" // Path to your image
+            imagePath="/images/art/Limelight.jpeg" // Path to your image
             alt="image of the website" // Alt text for the image
             link="/art/sketches-and-studies"
             imageWidth="500px"

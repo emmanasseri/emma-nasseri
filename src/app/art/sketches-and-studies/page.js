@@ -17,7 +17,29 @@ export default function sketchesAndStudiesPage() {
           imagePath="/images/art/Couch.jpeg" // Path to your image
           alt="image of the project" // Alt text for the image
           imageWidth="500px"
-          imageHeight="500px"
+          imageHeight="400px"
+        />
+        <SimpleImageDisplay
+          title="Bedsheet"
+          medium="graphite on paper"
+          dimensions="8x10 inches"
+          date="2019"
+          description="no description yet"
+          imagePath="/images/art/Bedsheet.jpeg" // Path to your image
+          alt="image of the project" // Alt text for the image
+          imageWidth="500px"
+          imageHeight="300px"
+        />
+        <SimpleImageDisplay
+          title="Limelight"
+          medium="charcoal and conté on paper"
+          dimensions="18x24 inches"
+          date="2019"
+          description="a drawing of my younger brother playing the piano"
+          imagePath="/images/art/Limelight.jpeg" // Path to your image
+          alt="image of the project" // Alt text for the image
+          imageWidth="500px"
+          imageHeight="700px"
         />
       </div>
     </>

@@ -19,6 +19,17 @@ export default function figuresPage() {
           imageWidth="500px"
           imageHeight="500px"
         />
+        <SimpleImageDisplay
+          title="study of my sister"
+          medium="charcoal on paper"
+          dimensions="8x11 inches"
+          date="Fall 2019"
+          description="no description yet"
+          imagePath="/images/art/Eden.jpg" // Path to your image
+          alt="image of the project" // Alt text for the image
+          imageWidth="500px"
+          imageHeight="500px"
+        />
       </div>
     </>
   );
