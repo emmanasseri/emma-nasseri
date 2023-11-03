@@ -3,16 +3,16 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Book from "@/app/reading/Book";
-import { favBooks } from "./bookData";
+import books from "./bookData";
 
-export default function readingPage() {
+export default function scifiPage() {
   return (
     <>
       <Navbar />
       <div style={styles.pageContainer}>
-        <h1 style={styles.centeredTitle}>some of my favorite books</h1>
+        <h1 style={styles.centeredTitle}>my sci fi library</h1>
         <div style={styles.cardsContainer}>
-          {favBooks.map((book, index) => (
+          {books.map((book, index) => (
             <Book
               key={index}
               imgSrc={book.imgSrc}

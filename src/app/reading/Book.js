@@ -6,6 +6,13 @@ const Book = ({ imgSrc, title, author, yearLastRead, rating, review }) => {
   const handleMouseEnter = (event) => {
     const modal = event.target.nextSibling;
     modal.style.display = "block";
+
+    // Check if modal would be cut off on the right side
+    if (event.clientX + modal.offsetWidth > window.innerWidth) {
+      modal.style.left = "-310px"; // Shift to left of book
+    } else {
+      modal.style.left = "210px"; // Right side of book
+    }
   };
 
   const handleMouseLeave = (event) => {
@@ -27,25 +34,18 @@ const Book = ({ imgSrc, title, author, yearLastRead, rating, review }) => {
           display: "none",
           position: "absolute",
           top: "0",
-          left: "220px",
           backgroundColor: "white",
           padding: "10px",
           boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+          width: "300px",
+          zIndex: 1000, // Ensures modal is above other elements
         }}
       >
         <h3>{title}</h3>
-        <p>
-          <strong>Author:</strong> {author}
-        </p>
-        <p>
-          <strong>Year Last Read:</strong> {yearLastRead}
-        </p>
-        <p>
-          <strong>Rating:</strong> {rating}
-        </p>
-        <p>
-          <strong>Review:</strong> {review}
-        </p>
+        <p>by {author}</p>
+        <p>last read {yearLastRead}</p>
+        <p>{rating}</p>
+        <p>{review}</p>
       </div>
     </div>
   );
