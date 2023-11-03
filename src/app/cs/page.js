@@ -12,28 +12,28 @@ export default function CSPage() {
           <OutlineCard
             title="Spencer Collaboration"
             description="an art project involving blockchain"
-            imagePath="/images/spencerImage.png" // Path to your image
+            imagePath="/images/cs/spencerImage.png" // Path to your image
             alt="image of the website" // Alt text for the image
             link="https://github.com/KU-Blockchain/spencer-museum-collaboration"
           />
           <OutlineCard
             title="Blockchain Attendance Tracker"
             description="a student focused attendance tool"
-            imagePath="/images/attendThisImage.png" // Path to your image
+            imagePath="/images/cs/attendThisImage.png" // Path to your image
             alt="image of the website" // Alt text for the image
             link="https://attendthis.on.fleek.co/"
           />
           <OutlineCard
             title="Philosophical Chatbot"
             description="this is totally a work in progress"
-            imagePath="/images/chatbot.png" // Path to your image
+            imagePath="/images/cs/chatbot.png" // Path to your image
             alt="image of the website" // Alt text for the image
             link="https://simple-chat-bot-smoky.vercel.app/"
           />
           <OutlineCard
             title="Interdisciplinary collaborations"
             description="a choose your own adventure game"
-            imagePath="/images/spencerImage.png" // Path to your image
+            imagePath="/images/cs/spencerImage.png" // Path to your image
             alt="image of the website" // Alt text for the image
           />
         </div>
