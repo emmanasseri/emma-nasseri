@@ -1,54 +1,44 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import OutlineButton from "./OutlineButton";
-import Image from "next/image";
+import styles from "./Navbar.module.css"; // Import the CSS module
 
 const Navbar = () => {
+  const [isDrawerOpen, setDrawerOpen] = useState(false);
+
   return (
-    <nav style={styles.navbar}>
-      <Link href="/" className={styles.navItem}>
+    <nav className={styles.navbar}>
+      <Link href="/">
         <OutlineButton title="home" />
       </Link>
-      <div style={styles.rightMenu}>
-        <Link href="/#about" style={styles.navItem}>
+
+      <div className={isDrawerOpen ? styles.drawer : styles.rightMenu}>
+        <Link href="/#about">
           <OutlineButton title="about me" />
         </Link>
-        <Link href="/#contact" style={styles.navItem}>
+        <Link href="/#contact">
           <OutlineButton title="contact" />
         </Link>
-        <Link href="/cs" style={styles.navItem}>
+        <Link href="/cs">
           <OutlineButton title="compsci" />
         </Link>
-        <Link href="/writing" style={styles.navItem}>
+        <Link href="/writing">
           <OutlineButton title="writing" />
         </Link>
-        <Link href="/art" style={styles.navItem}>
+        <Link href="/art">
           <OutlineButton title="art" />
         </Link>
+      </div>
+
+      <div
+        className={styles.hamburger}
+        onClick={() => setDrawerOpen(!isDrawerOpen)}
+      >
+        ☰
       </div>
     </nav>
   );
 };
 
 export default Navbar;
-
-const styles = {
-  navbar: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    width: "100%", // Ensure the navbar takes up the full width
-
-    padding: "10px 0",
-  },
-  rightMenu: {
-    display: "flex",
-    alignItems: "center",
-  },
-  navItem: {
-    color: "white",
-    padding: "10px 15px",
-    textDecoration: "none",
-    margin: "0 10px",
-  },
-};
