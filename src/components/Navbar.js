@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import OutlineButton from "./OutlineButton";
 import styles from "./Navbar.module.css"; // Import the CSS module
@@ -7,6 +7,20 @@ import styles from "./Navbar.module.css"; // Import the CSS module
 const Navbar = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setDrawerOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <nav className={styles.navbar}>
       <Link href="/">
@@ -14,19 +28,19 @@ const Navbar = () => {
       </Link>
 
       <div className={isDrawerOpen ? styles.drawer : styles.rightMenu}>
-        <Link href="/#about">
+        <Link href="/#about" className={styles.drawerItem}>
           <OutlineButton title="about me" />
         </Link>
-        <Link href="/#contact">
+        <Link href="/#contact" className={styles.drawerItem}>
           <OutlineButton title="contact" />
         </Link>
-        <Link href="/cs">
+        <Link href="/cs" className={styles.drawerItem}>
           <OutlineButton title="compsci" />
         </Link>
-        <Link href="/writing">
+        <Link href="/writing" className={styles.drawerItem}>
           <OutlineButton title="writing" />
         </Link>
-        <Link href="/art">
+        <Link href="/art" className={styles.drawerItem}>
           <OutlineButton title="art" />
         </Link>
       </div>
