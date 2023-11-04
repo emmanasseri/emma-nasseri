@@ -241,4 +241,12 @@ export const otherFiction = [
     review:
       "i read this in england. other than the incest, which i do not condone, great read.",
   },
+  {
+    imgSrc: "/images/reading/thefarm.png",
+    title: "The Farm",
+    author: "Tom Rob Smith",
+    yearLastRead: "2023",
+    rating: "5/5",
+    review: "totally gripping. very excited to read this one again.",
+  },
 ];
