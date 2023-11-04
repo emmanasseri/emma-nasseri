@@ -2,23 +2,39 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import OutlineCard from "@/components/OutlineCard";
 import Image from "next/image";
+import OutlineButton from "@/components/OutlineButton";
 
 export default function ArtPage() {
   return (
     <>
       <Navbar />
       <div style={styles.pageContainer}>
-        <div style={styles.intro}>
-          <div style={styles.imageContainer}>
-            <Image
-              src="/images/art/selfPortrait.jpeg"
-              alt="self portrait"
-              layout="responsive"
-              width={1000}
-              height={200}
-            />
+        <div style={styles.cardsContainer}>
+          <div
+            style={{
+              ...styles.infoSection,
+
+              backgroundImage: " url('/images/art/selfPortraitBackground.png')",
+              width: 1300,
+              height: 400,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+            }}
+          >
+            <strong>my art journey</strong>
+
+            <p style={{ width: "50%", marginLeft: "auto" }}>
+              i started drawing in high school, with graphite then charcoal.
+              then acrylics and figure drawing in later high school. oils and
+              figure painting in college. once an art teacher asked me if i was
+              colorblind because i color-matched so poorly. i've been fighting
+              the color-blind allegations since. another art teacher once told
+              me i have big ears.
+              <br /> <br />
+              art builds a lot of character i think.
+            </p>
           </div>
-          <span>i've been drawing since 2016</span>
         </div>
         <h1 style={styles.centeredTitle}>here are some things i've created.</h1>
         <div style={styles.cardsContainer}>
@@ -30,6 +46,7 @@ export default function ArtPage() {
             link="/art/university-scholars"
             imageWidth="400px"
             imageHeight="500px"
+            buttonTitle="view work"
           />
           <OutlineCard
             title="figurative work"
@@ -39,6 +56,7 @@ export default function ArtPage() {
             link="/art/figures"
             imageWidth="400px"
             imageHeight="500px"
+            buttonTitle="view work"
           />
           <OutlineCard
             title="2020 pandemic show"
@@ -48,6 +66,7 @@ export default function ArtPage() {
             link="/art/2020-show"
             imageWidth="500px"
             imageHeight="500px"
+            buttonTitle="view work"
           />
           <OutlineCard
             title="sketches and studies"
@@ -57,6 +76,7 @@ export default function ArtPage() {
             link="/art/sketches-and-studies"
             imageWidth="500px"
             imageHeight="500px"
+            buttonTitle="view work"
           />
         </div>
       </div>
@@ -87,6 +107,7 @@ const styles = {
   centeredTitle: {
     textAlign: "center",
     marginBottom: "20px", // Adds some space below the title
+    marginTop: "40px",
   },
   cardsContainer: {
     display: "flex",
@@ -95,5 +116,27 @@ const styles = {
     gap: "20px", // Adds space between each card
     justifyContent: "center", // Center items horizontally
     alignItems: "center", // Center items vertically
+  },
+
+  centeredTitle: {
+    textAlign: "center",
+    marginBottom: "20px", // Adds some space below the title
+    marginTop: "20px",
+  },
+
+  infoSection: {
+    border: "2px solid black",
+    borderRadius: "8px",
+    padding: "15px 15px",
+    backgroundColor: "transparent",
+    color: "white", // Sets text color to white
+    outline: "none",
+    transition: "0.3s",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-end", // Aligns children to the right side of the container
+    textAlign: "right", // Aligns text to the right within the children elements
+    width: "80%",
+    marginTop: "100px",
   },
 };

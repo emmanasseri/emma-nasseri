@@ -9,6 +9,7 @@ const OutlineCard = ({
   link,
   imageWidth = "100%", // default value if not provided
   imageHeight = "250px", // default value if not provided
+  buttonTitle = "view project",
 }) => {
   return (
     <div style={styles.card}>
@@ -28,7 +29,7 @@ const OutlineCard = ({
       </div>
       <span style={styles.title}>{title}</span>
       <span style={styles.body}>{description}</span>
-      <OutlineButton title="view project" link={link} />
+      <OutlineButton title={buttonTitle} link={link} />
     </div>
   );
 };
