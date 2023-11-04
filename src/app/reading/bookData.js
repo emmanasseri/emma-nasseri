@@ -125,16 +125,55 @@ export const sciFiBooks = [
   },
 ];
 
-export const favBooks = [
+export const topFiveBooks = [
   {
-    imgSrc: "/images/reading/endersgame.png",
-    title: "Ender's Game",
-    author: "Orson Scott Card",
-    yearLastRead: "2023",
-    rating: "5/5",
-    review: "obsessed with this book",
+    imgSrc: "/images/reading/thelittleprince.png",
+    title: "The Little Prince",
+    author: "Antoine De Saint Exupéry",
+    yearLastRead: "just now",
+    rating: "100/5",
+    review: "everyone should read the little prince. every day.",
   },
 
+  {
+    imgSrc: "/images/reading/sirens.png",
+    title: "Sirens of Titan",
+    author: "Kurt Vonnegut",
+    yearLastRead: "Summer 2023",
+    rating: "6/5",
+    review:
+      "so good. once i finished reading it the first time i was like 'that was weird' then i couldn't stop thinking about it for months. i think about it every day. the story holds so much wisdom on morality, religion, and the meaning of life. it just gets better and better the more i think about it. thank you vonnegut<3",
+  },
+  {
+    imgSrc: "/images/reading/irobot.png",
+    title: "I, Robot",
+    author: "Isaac Asimov",
+    yearLastRead: "Summer 2023",
+    rating: "5/5",
+    review:
+      "most important sci fi book ever. everyone should read this, especially those in tech.",
+  },
+
+  {
+    imgSrc: "/images/reading/slaughterhouse5.png",
+    title: "Slaughterhouse Five",
+    author: "Kurt Vonnegut",
+    yearLastRead: "2023",
+    rating: "5/5",
+    review: "just so good",
+  },
+
+  {
+    imgSrc: "/images/reading/thebelljar.png",
+    title: "The Bell Jar",
+    author: "Sylvia Plath",
+    yearLastRead: "2023",
+    rating: "5/5",
+    review: "READ WITH CAUTION. be stable before reading please.",
+  },
+];
+
+export const thinkAboutBooks = [
   {
     imgSrc: "/images/reading/sirens.png",
     title: "Sirens of Titan",
@@ -153,23 +192,53 @@ export const favBooks = [
     review:
       "most important sci fi book ever. everyone should read this, especially those in tech.",
   },
+];
 
+export const otherFiction = [
   {
-    imgSrc: "/images/reading/slaughterhouse5.png",
-    title: "Slaughterhouse Five",
-    author: "Kurt Vonnegut",
+    imgSrc: "/images/reading/child44.png",
+    title: "Child 44",
+    author: "Tom Rob Smith",
     yearLastRead: "2023",
-    rating: "5/5",
+    rating: "4/5",
     review:
-      "intense. heartbreaking. painfully ironic and beautiful. NOT for the faint of heart.",
+      "super engaging. definitely overexplained a bit but but would definitely recommend this one (generally).",
   },
 
   {
-    imgSrc: "/images/reading/bravenewworld.png",
-    title: "Brave New World",
-    author: "Aldous Huxley",
+    imgSrc: "/images/reading/foreveroralong.png",
+    title: "Forever or a Long, Long Time",
+    author: "Caela Carter",
     yearLastRead: "2019",
-    rating: "5/5",
-    review: "EXTREMELY IMPORTANT",
+    rating: "4/5",
+    review:
+      "i think this is actually a middle grade novel but i love it so much. punched me in the heart.",
+  },
+
+  {
+    imgSrc: "/images/reading/myyearof.png",
+    title: "My Year of Rest and Relaxation",
+    author: "Otessa Moshfegh",
+    yearLastRead: "2023",
+    rating: "4/5",
+    review:
+      "not to be that guy but this book totally got me out of a funk. i went outside and like laid down in the grass and now i gratitide journal and stuff.",
+  },
+  {
+    imgSrc: "/images/reading/theodyssey.png",
+    title: "The Odyssey",
+    author: "Homer",
+    yearLastRead: "2018",
+    rating: "4/5",
+    review: "i guess this is fiction.",
+  },
+  {
+    imgSrc: "/images/reading/wutheringheights.png",
+    title: "Wuthering Heights",
+    author: "Emily Brontë",
+    yearLastRead: "2022",
+    rating: "4/5",
+    review:
+      "i read this in england. other than the incest, which i do not condone, great read.",
   },
 ];
