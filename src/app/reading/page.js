@@ -3,14 +3,17 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Book from "@/app/reading/Book";
-import { otherFiction, thinkAboutBooks, topFiveBooks } from "./bookData";
+import { otherFiction, thinkAboutBooks, topFiveBooks } from "./bookData.js";
+import TextCard from "@/components/TextCard.js";
 
 export default function readingPage() {
   return (
     <>
       <Navbar />
       <div style={styles.pageContainer}>
-        <h1 style={styles.centeredTitle}>my top 5</h1>
+        <h1 style={styles.centeredTitle}>
+          my top 5 books ever (for right now)
+        </h1>
         <div style={styles.cardsContainer}>
           {topFiveBooks.map((book, index) => (
             <Book
@@ -39,6 +42,7 @@ export default function readingPage() {
             />
           ))}
         </div>
+        <TextCard />
       </div>
     </>
   );
