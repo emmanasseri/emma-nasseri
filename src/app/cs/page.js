@@ -24,6 +24,13 @@ export default function CSPage() {
             link="https://attendthis.on.fleek.co/"
           />
           <OutlineCard
+            title="This website"
+            description="built from scratch with React"
+            imagePath="/images/cs/thissite.png" // Path to your image
+            alt="image of the website" // Alt text for the image
+            link="https://github.com/emmanasseri/portfolio-site"
+          />
+          <OutlineCard
             title="Philosophical Chatbot"
             description="this is totally a work in progress"
             imagePath="/images/cs/chatbot.png" // Path to your image
