@@ -7,7 +7,17 @@ export default function Writing() {
     <>
       <Navbar />
       <div style={styles.pageContainer}>
-        <h1 style={styles.centeredTitle}>published writing</h1>
+        <div style={styles.cardsContainer}>
+          <div style={styles.infoSection}>
+            <strong>blog posts!</strong>
+
+            <p>
+              here are some of my blog posts. ok i havent written them yet but
+              here is where they're going to be.{" "}
+            </p>
+            <OutlineButton title="visit blog" link="/writing/blog" />
+          </div>
+        </div>
 
         <div style={styles.cardsContainer}>
           <div style={styles.infoSection}>
@@ -221,7 +231,6 @@ const styles = {
   },
   centeredTitle: {
     textAlign: "center",
-    marginBottom: "20px", // Adds some space below the title
     marginTop: "20px",
   },
   cardsContainer: {
