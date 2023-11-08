@@ -36,7 +36,9 @@ export default function ArtPage() {
             </p>
           </div>
         </div>
-        <h1 style={styles.centeredTitle}>here are some things i've created.</h1>
+        <h1 style={styles.centeredTitle}>
+          here are some galleries i've created.
+        </h1>
         <div style={styles.cardsContainer}>
           <OutlineCard
             title="University Scholars Capstone"
@@ -125,7 +127,6 @@ const styles = {
   },
 
   infoSection: {
-    border: "2px solid black",
     borderRadius: "8px",
     padding: "15px 15px",
     backgroundColor: "transparent",

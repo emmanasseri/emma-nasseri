@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import SimpleImageDisplay from "@/components/SimpleImageDisplay";
+import GalleryImageDisplay from "@/components/galleryImageDisplay";
 
 export default function figuresPage() {
   return (
@@ -8,7 +9,7 @@ export default function figuresPage() {
       <Navbar />
       <h1 style={styles.centeredTitle}>figures</h1>
       <div style={styles.artContainer}>
-        <SimpleImageDisplay
+        <GalleryImageDisplay
           title="study of a statue at the wilcox museum"
           medium="charcoal and conté on toned paper"
           dimensions="18x24 inches"
@@ -17,9 +18,9 @@ export default function figuresPage() {
           imagePath="/images/art/wilcox.jpeg" // Path to your image
           alt="image of the project" // Alt text for the image
           imageWidth="500px"
-          imageHeight="500px"
+          imageHeight="700px"
         />
-        <SimpleImageDisplay
+        <GalleryImageDisplay
           title="study of my sister"
           medium="charcoal on paper"
           dimensions="8x11 inches"
@@ -28,7 +29,7 @@ export default function figuresPage() {
           imagePath="/images/art/Eden.jpg" // Path to your image
           alt="image of the project" // Alt text for the image
           imageWidth="500px"
-          imageHeight="500px"
+          imageHeight="600px"
         />
       </div>
     </>

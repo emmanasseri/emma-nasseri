@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import SimpleImageDisplay from "@/components/SimpleImageDisplay";
+import GalleryImageDisplay from "@/components/galleryImageDisplay";
 
 export default function sketchesAndStudiesPage() {
   return (
@@ -8,7 +9,7 @@ export default function sketchesAndStudiesPage() {
       <Navbar />
       <h1 style={styles.centeredTitle}>other work i've done</h1>
       <div style={styles.artContainer}>
-        <SimpleImageDisplay
+        <GalleryImageDisplay
           title="Couch"
           medium="charcoal on paper"
           dimensions="8x10 inches"
@@ -19,7 +20,7 @@ export default function sketchesAndStudiesPage() {
           imageWidth="500px"
           imageHeight="400px"
         />
-        <SimpleImageDisplay
+        <GalleryImageDisplay
           title="Bedsheet"
           medium="graphite on paper"
           dimensions="8x10 inches"
@@ -30,7 +31,7 @@ export default function sketchesAndStudiesPage() {
           imageWidth="500px"
           imageHeight="300px"
         />
-        <SimpleImageDisplay
+        <GalleryImageDisplay
           title="Limelight"
           medium="charcoal and conté on paper"
           dimensions="18x24 inches"
@@ -57,6 +58,6 @@ const styles = {
     flexWrap: "wrap", // Allow items to wrap to the next row
     gap: "20px", // Adds space between each card
     justifyContent: "center", // Center items horizontally
-    alignItems: "center", // Center items vertically
+    //alignItems: "center", // Center items vertically
   },
 };

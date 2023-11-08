@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import SimpleImageDisplay from "@/components/SimpleImageDisplay";
+import GalleryImageDisplay from "@/components/galleryImageDisplay";
 
 export default function pandemicShowPage() {
   return (
@@ -8,7 +9,7 @@ export default function pandemicShowPage() {
       <Navbar />
       <h1 style={styles.centeredTitle}>work i made for my senior show</h1>
       <div style={styles.artContainer}>
-        <SimpleImageDisplay
+        <GalleryImageDisplay
           title="You Pulled Me from Deep Darkness"
           medium="charcoal and ink on paper"
           dimensions="20x20 inches"
@@ -19,7 +20,7 @@ export default function pandemicShowPage() {
           imageWidth="500px"
           imageHeight="500px"
         />
-        <SimpleImageDisplay
+        <GalleryImageDisplay
           title="You Saw that It was Good"
           medium="acrylic on canvas"
           dimensions="20x20 inches"
@@ -30,7 +31,7 @@ export default function pandemicShowPage() {
           imageWidth="500px"
           imageHeight="500px"
         />
-        <SimpleImageDisplay
+        <GalleryImageDisplay
           title="You Bring Dry Bones to Life"
           medium="acrylic on canvas"
           dimensions="20x20 inches"
@@ -41,7 +42,7 @@ export default function pandemicShowPage() {
           imageWidth="500px"
           imageHeight="500px"
         />
-        <SimpleImageDisplay
+        <GalleryImageDisplay
           title="You Are Near the Broken-hearted"
           medium="acrylic on canvas"
           dimensions="16x24 inches"

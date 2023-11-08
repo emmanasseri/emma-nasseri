@@ -37,7 +37,6 @@ export default SimpleImageDisplay;
 
 const styles = {
   card: {
-    border: "1px solid black",
     borderRadius: "8px",
     padding: "15px 15px",
     backgroundColor: "transparent",

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import SimpleImageDisplay from "@/components/SimpleImageDisplay";
+import GalleryImageDisplay from "@/components/galleryImageDisplay";
 
 export default function UniScholarsPage() {
   return (
@@ -8,7 +9,7 @@ export default function UniScholarsPage() {
       <Navbar />
       <h1 style={styles.centeredTitle}>university scholars project</h1>
       <div style={styles.artContainer}>
-        <SimpleImageDisplay
+        <GalleryImageDisplay
           title="In the Name of the Father, the Son, & the Holy Spirit"
           medium="acrylic on canvas"
           dimensions="20x20 inches"
@@ -19,7 +20,7 @@ export default function UniScholarsPage() {
           imageWidth="500px"
           imageHeight="500px"
         />
-        <SimpleImageDisplay
+        <GalleryImageDisplay
           title="Let Old Hatreds Lie Undisturbed"
           medium="acrylic on canvas"
           dimensions="18x22 inces"
@@ -46,6 +47,6 @@ const styles = {
     flexWrap: "wrap", // Allow items to wrap to the next row
     gap: "20px", // Adds space between each card
     justifyContent: "center", // Center items horizontally
-    alignItems: "center", // Center items vertically
+    //alignItems: "center", // Center items vertically
   },
 };
