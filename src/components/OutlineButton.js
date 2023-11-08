@@ -31,7 +31,7 @@ const OutlineButton = ({ title, onClick, link, textColor = "black" }) => {
 export default OutlineButton;
 const styles = {
   button: {
-    border: "1px solid black",
+    border: "2px solid black",
     borderRadius: "8px",
     padding: "8px 16px",
     backgroundColor: "transparent",

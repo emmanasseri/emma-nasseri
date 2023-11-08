@@ -7,6 +7,12 @@ export default function CSPage() {
     <>
       <Navbar />
       <div style={styles.pageContainer}>
+        <div style={styles.githubChart}>
+          <img
+            src="http://ghchart.rshah.org/409ba5/emmanasseri"
+            alt="emmanasseri's Github chart"
+          />
+        </div>
         <h1 style={styles.centeredTitle}>here are a few of my projects.</h1>
         <div style={styles.cardsContainer}>
           <OutlineCard
@@ -51,6 +57,11 @@ export default function CSPage() {
 }
 
 const styles = {
+  githubChart: {
+    display: "flex",
+    justifyContent: "center", // Center items horizontally
+    alignItems: "center", // Center items vertically
+  },
   pageContainer: {
     padding: "20px", // Adds some padding to the overall page
   },
