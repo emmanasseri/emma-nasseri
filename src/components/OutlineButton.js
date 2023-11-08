@@ -1,10 +1,17 @@
 import React from "react";
 import Link from "next/link";
 
-const OutlineButton = ({ title, onClick, link }) => {
+const OutlineButton = ({ title, onClick, link, textColor = "black" }) => {
   if (link) {
     return (
-      <Link href={link} style={styles.buttonLink}>
+      <Link
+        href={link}
+        style={{
+          ...styles.buttonLink,
+          color: textColor,
+          borderColor: textColor,
+        }}
+      >
         {title}
       </Link>
     );
@@ -24,11 +31,11 @@ const OutlineButton = ({ title, onClick, link }) => {
 export default OutlineButton;
 const styles = {
   button: {
-    border: "2px solid black",
+    border: "1px solid black",
     borderRadius: "8px",
     padding: "8px 16px",
     backgroundColor: "transparent",
-    color: "black",
+    // color: "black",
     cursor: "pointer",
     outline: "none",
     transition: "0.3s",
@@ -43,7 +50,7 @@ const styles = {
     borderRadius: "8px",
     padding: "8px 16px",
     backgroundColor: "transparent",
-    color: "black",
+    //color: "black",
     cursor: "pointer",
     textDecoration: "none",
     outline: "none",

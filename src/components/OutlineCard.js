@@ -29,7 +29,7 @@ const OutlineCard = ({
       </div>
       <span style={styles.title}>{title}</span>
       <span style={styles.body}>{description}</span>
-      <OutlineButton title={buttonTitle} link={link} />
+      <OutlineButton title={buttonTitle} link={link} textColor="white" />
     </div>
   );
 };
@@ -41,8 +41,8 @@ const styles = {
     border: "2px solid black",
     borderRadius: "8px",
     padding: "15px 15px",
-    backgroundColor: "transparent",
-    color: "black",
+    backgroundColor: "black",
+    color: "white",
     outline: "none",
     transition: "0.3s",
     width: "500px",

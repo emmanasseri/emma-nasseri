@@ -25,7 +25,7 @@ export default function CSPage() {
           />
           <OutlineCard
             title="This website"
-            description="built from scratch with React"
+            description="built from scratch with React and Next.js"
             imagePath="/images/cs/thissite.png" // Path to your image
             alt="image of the website" // Alt text for the image
             link="https://github.com/emmanasseri/portfolio-site"
@@ -43,12 +43,6 @@ export default function CSPage() {
             imagePath="/images/cs/chatbot.png" // Path to your image
             alt="image of the website" // Alt text for the image
             link="https://simple-chat-bot-smoky.vercel.app/"
-          />
-          <OutlineCard
-            title="Interdisciplinary collaborations"
-            description="a choose your own adventure game"
-            imagePath="/images/cs/spencerImage.png" // Path to your image
-            alt="image of the website" // Alt text for the image
           />
         </div>
       </div>
