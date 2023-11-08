@@ -1,19 +1,32 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import OutlineCard from "@/components/OutlineCard";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function CSPage() {
   return (
     <>
       <Navbar />
       <div style={styles.pageContainer}>
+        <h2 style={styles.centeredTitle}>i like to code!</h2>
         <div style={styles.githubChart}>
+          <div style={styles.githubLogo}>
+            <Link href="https://github.com/emmanasseri">
+              <Image
+                src="/images/icons/githubLogo.png"
+                width="70"
+                height="70"
+              />
+            </Link>
+          </div>
           <img
             src="http://ghchart.rshah.org/409ba5/emmanasseri"
             alt="emmanasseri's Github chart"
           />
         </div>
-        <h1 style={styles.centeredTitle}>here are a few of my projects.</h1>
+
+        <h2 style={styles.centeredTitle}>here are a few of my projects.</h2>
         <div style={styles.cardsContainer}>
           <OutlineCard
             title="Spencer Collaboration"
@@ -57,10 +70,14 @@ export default function CSPage() {
 }
 
 const styles = {
+  githubLogo: {
+    margin: "50px",
+  },
   githubChart: {
     display: "flex",
     justifyContent: "center", // Center items horizontally
     alignItems: "center", // Center items vertically
+    marginBottom: "70px",
   },
   pageContainer: {
     padding: "20px", // Adds some padding to the overall page
@@ -68,6 +85,7 @@ const styles = {
   centeredTitle: {
     textAlign: "center",
     marginBottom: "20px", // Adds some space below the title
+    marginTop: "20px",
   },
   cardsContainer: {
     display: "flex",
