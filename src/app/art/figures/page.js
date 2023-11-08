@@ -31,6 +31,28 @@ export default function figuresPage() {
           imageWidth="500px"
           imageHeight="600px"
         />
+        <GalleryImageDisplay
+          title="gesture"
+          medium="charcoal on newsprint"
+          dimensions="18x24 inches"
+          date="Fall 2020"
+          description="5 minutes"
+          imagePath="/images/art/gesture1.png" // Path to your image
+          alt="image of the project" // Alt text for the image
+          imageWidth="300px"
+          imageHeight="400px"
+        />
+        <GalleryImageDisplay
+          title="gesture"
+          medium="charcoal on newsprint"
+          dimensions="18x24 inches"
+          date="Fall 2020"
+          description="5 minutes"
+          imagePath="/images/art/gesture2.png" // Path to your image
+          alt="image of the project" // Alt text for the image
+          imageWidth="400px"
+          imageHeight="300px"
+        />
       </div>
     </>
   );

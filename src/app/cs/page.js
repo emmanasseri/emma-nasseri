@@ -31,6 +31,13 @@ export default function CSPage() {
             link="https://github.com/emmanasseri/portfolio-site"
           />
           <OutlineCard
+            title="Blockchain Jeopardy site"
+            description="a Jeopardy inspired trivia board for blockchain education"
+            imagePath="/images/cs/blockchainJeopardy.png" // Path to your image
+            alt="image of the website" // Alt text for the image
+            link="https://blockchain-jeopardy.vercel.app/"
+          />
+          <OutlineCard
             title="Philosophical Chatbot"
             description="this is totally a work in progress"
             imagePath="/images/cs/chatbot.png" // Path to your image
