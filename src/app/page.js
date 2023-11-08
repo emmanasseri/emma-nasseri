@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import ContactForm from "@/components/contactForm";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <>
@@ -16,16 +16,16 @@ export default function Home() {
               height={100}
             />
             <p style={styles.aboutText}>
-              I am a student at the university of kansas studying computer
-              science and visual arts.
+              I am a student at the university of kansas studying{" "}
+              <strong>computer science</strong> & <strong>visual arts.</strong>
             </p>
           </div>
           <div style={styles.imageContainer}>
             <Image
               src="/images/profile_pic.jpeg" // replace with your image path
               alt="Profile Picture"
-              width={300} // adjust as needed
-              height={300} // adjust as needed
+              width={250} // adjust as needed
+              height={250} // adjust as needed
               style={styles.profileImage}
             />
           </div>
@@ -38,6 +38,19 @@ export default function Home() {
             height={200}
           />
         </div>
+
+        <div>
+          <Link href="https://github.com/emmanasseri" style={styles.linkButton}>
+            <Image src="/images/icons/githubLogo.png" width="70" height="70" />
+          </Link>
+
+          <Link
+            href="https://www.linkedin.com/in/emma-nasseri/"
+            style={styles.linkButton}
+          >
+            <Image src="/images/icons/linkedin.png" width="70" height="70" />
+          </Link>
+        </div>
       </div>
     </>
   );
@@ -49,6 +62,7 @@ const styles = {
     flexDirection: "column", // Stack items vertically
     alignItems: "center",
     justifyContent: "center", // This centers the stackContainer items on the cross-axis (horizontally, since it's a column)
+    marginBottom: "50px",
   },
   rowContainer: {
     display: "flex",
@@ -61,11 +75,14 @@ const styles = {
   aboutText: {
     margin: "20px", // adjust spacing as needed
   },
+  lineArtContainer: {
+    marginBottom: "50px",
+  },
   imageContainer: {
     borderRadius: "50%",
     overflow: "hidden",
-    width: "400px", // match width of the Image
-    height: "400px", // match height of the Image
+    width: "300px", // match width of the Image
+    height: "300px", // match height of the Image
     display: "flex", // ensures that the Image is centered inside the container
     justifyContent: "center",
     alignItems: "center",
@@ -73,4 +90,5 @@ const styles = {
   profileImage: {
     borderRadius: "50%", // this will make the image circular
   },
+  linkButton: { margin: "20px" },
 };
