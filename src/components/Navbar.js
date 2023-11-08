@@ -28,9 +28,6 @@ const Navbar = () => {
       </Link>
 
       <div className={isDrawerOpen ? styles.drawer : styles.rightMenu}>
-        <Link href="/#contact" className={styles.drawerItem}>
-          <OutlineButton title="contact" />
-        </Link>
         <Link href="/cs" className={styles.drawerItem}>
           <OutlineButton title="coding" />
         </Link>
