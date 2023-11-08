@@ -21,7 +21,7 @@ export default function figuresPage() {
           imageHeight="700px"
         />
         <GalleryImageDisplay
-          title="study of my sister"
+          title="portrait of my sister"
           medium="charcoal on paper"
           dimensions="8x11 inches"
           date="Fall 2019"
@@ -52,6 +52,61 @@ export default function figuresPage() {
           alt="image of the project" // Alt text for the image
           imageWidth="400px"
           imageHeight="300px"
+        />
+        <GalleryImageDisplay
+          title="gestures in ink"
+          medium="ink on paper"
+          dimensions="8x10 inches"
+          date="Summer 2019"
+          description="from my summer at the School of the Art Institute of Chicago"
+          imagePath="/images/art/SAICGestures.jpeg" // Path to your image
+          alt="image of the project" // Alt text for the image
+          imageWidth="700px"
+          imageHeight="300px"
+        />
+        <GalleryImageDisplay
+          title="drawing of a reclining man"
+          medium="charcoal and conté on toned paper"
+          dimensions="18x24 inches"
+          date="Summer 2019"
+          description="from my summer at the School of the Art Institute of Chicago"
+          imagePath="/images/art/recliningFigureSAIC.jpeg" // Path to your image
+          alt="image of the project" // Alt text for the image
+          imageWidth="700px"
+          imageHeight="500px"
+        />{" "}
+        <GalleryImageDisplay
+          title="drawing of a seated man"
+          medium="charcoal and conté on toned paper"
+          dimensions="18x24 inches"
+          date="Summer 2019"
+          description="from my summer at the School of the Art Institute of Chicago"
+          imagePath="/images/art/SAICEinsteinfigure.jpeg" // Path to your image
+          alt="image of the project" // Alt text for the image
+          imageWidth="300px"
+          imageHeight="400px"
+        />{" "}
+        <GalleryImageDisplay
+          title="portrait of a woman"
+          medium="charcoal and conté on toned paper"
+          dimensions="18x24 inches"
+          date="Summer 2019"
+          description="from my summer at the School of the Art Institute of Chicago"
+          imagePath="/images/art/SAICPortrait.jpeg" // Path to your image
+          alt="image of the project" // Alt text for the image
+          imageWidth="450px"
+          imageHeight="500px"
+        />{" "}
+        <GalleryImageDisplay
+          title="gestures"
+          medium="charcoal and conté on craft paper"
+          dimensions="24x30 inches"
+          date="Summer 2019"
+          description="from my summer at the School of the Art Institute of Chicago"
+          imagePath="/images/art/SAICGestures2.jpeg" // Path to your image
+          alt="image of the project" // Alt text for the image
+          imageWidth="700px"
+          imageHeight="700px"
         />
       </div>
     </>

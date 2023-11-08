@@ -24,7 +24,7 @@ export default function ArtPage() {
           >
             <strong>my art journey</strong>
 
-            <p style={{ width: "50%", marginLeft: "auto" }}>
+            <p style={{ width: "40%", marginLeft: "auto" }}>
               i started drawing in high school, with graphite then charcoal.
               then acrylics and figure drawing in later high school. oils and
               figure painting in college. once an art teacher asked me if i was
@@ -99,7 +99,7 @@ const styles = {
     color: "black",
     outline: "none",
     transition: "0.3s",
-    width: "500px",
+    width: "400px",
     display: "flex",
     flexDirection: "column",
   },
