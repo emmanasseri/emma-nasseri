@@ -7,6 +7,7 @@ export default function Writing() {
     <>
       <Navbar />
       <div style={styles.pageContainer}>
+        {/*
         <div style={styles.cardsContainer}>
           <div style={styles.infoSection}>
             <strong>blog posts!</strong>
@@ -18,7 +19,7 @@ export default function Writing() {
             <OutlineButton title="visit blog" link="/writing/blog" />
           </div>
         </div>
-
+        */}
         <div style={styles.cardsContainer}>
           <div style={styles.infoSection}>
             <strong>poetry published in kiosk magazine</strong>
@@ -30,12 +31,20 @@ export default function Writing() {
               this was the 67th edition. while these are my poems, i did not
               have any part in the visual design of the magazine.{" "}
             </p>
+            <p>
+              <i>Ghost</i> &ensp;&ensp; - &ensp;pages 52-55
+              <br />
+              <i>Silos</i> &ensp;&ensp; - &ensp; pages 80-81
+              <br />
+              <i>Song of Self</i> &ensp; - &ensp; pages 92-93
+            </p>
             <OutlineButton
               title="view publication"
               link="https://kioskmagazine.cargo.site/Kiosk-67"
             />
           </div>
         </div>
+        {/*
         <div
           style={{
             ...styles.cardsContainer,
@@ -47,6 +56,7 @@ export default function Writing() {
             backgroundPosition: "center",
           }}
         >
+
           <div
             style={{ position: "relative", width: "40%", paddingBottom: "50%" }}
           >
@@ -68,6 +78,9 @@ export default function Writing() {
             />
           </div>
         </div>
+        */}
+
+        {/*
         <div
           style={{
             ...styles.cardsContainer,
@@ -120,7 +133,9 @@ export default function Writing() {
             />
           </div>
         </div>
+        */}
 
+        {/*
         <div
           style={{
             ...styles.cardsContainer,
@@ -153,6 +168,7 @@ export default function Writing() {
             />
           </div>
         </div>
+        */}
 
         <div style={styles.cardsContainer}>
           <div style={styles.infoSection}>
