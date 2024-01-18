@@ -56,13 +56,6 @@ export default function CSPage() {
             alt="image of the website" // Alt text for the image
             link="https://blockchain-jeopardy.vercel.app/"
           />
-          <OutlineCard
-            title="Philosophical Chatbot"
-            description="this is totally a work in progress"
-            imagePath="/images/cs/chatbot.png" // Path to your image
-            alt="image of the website" // Alt text for the image
-            link="https://simple-chat-bot-smoky.vercel.app/"
-          />
         </div>
       </div>
     </>

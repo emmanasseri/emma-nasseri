@@ -27,12 +27,8 @@ export default function ArtPage() {
             <p style={{ width: "40%", marginLeft: "auto" }}>
               i started drawing in high school, with graphite then charcoal.
               then acrylics and figure drawing in later high school. oils and
-              figure painting in college. once an art teacher asked me if i was
-              colorblind because i color-matched so poorly. i've been fighting
-              the color-blind allegations since. another art teacher once told
-              me i have big ears.
-              <br /> <br />
-              art builds a lot of character i think.
+              figure painting in college. interested in beauty. concerned with
+              good.
             </p>
           </div>
         </div>
