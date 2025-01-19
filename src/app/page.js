@@ -3,25 +3,25 @@ import Image from "next/image";
 import ContactForm from "@/components/contactForm";
 import Link from "next/link";
 import OutlineCard from "@/components/OutlineCard";
+import { color } from "framer-motion";
 export default function Home() {
   return (
     <>
       <Navbar />
       <div id="about" style={styles.stackContainer}>
-        <div style={styles.rowContainer}>
-          <div>
-            <Image
-              src="/images/signature.png"
-              alt="Description for Accessibility"
-              width={500}
-              height={100}
-            />
-            <p style={styles.aboutText}>
-              I am a student at the university of kansas studying{" "}
-              <strong>computer science</strong> & <strong>visual arts.</strong>
-            </p>
-          </div>
-          <div style={styles.imageContainer}>
+        <div style={styles.headingContainer}>
+          <Image
+            src="/images/signature.png"
+            alt="Description for Accessibility"
+            width={800}
+            height={200}
+            style={styles.signatureImage}
+          />
+          <p style={styles.aboutText}>
+            I am an <strong>artist</strong> & <strong>web3 developer. </strong>
+          </p>
+
+          {/* <div style={styles.imageContainer}>
             <Image
               src="/images/profile_pic.jpeg" // replace with your image path
               alt="Profile Picture"
@@ -29,16 +29,16 @@ export default function Home() {
               height={250} // adjust as needed
               style={styles.profileImage}
             />
-          </div>
+          </div> */}
         </div>
-        <div style={styles.lineArtContainer}>
+        {/* <div style={styles.lineArtContainer}>
           <Image
             src="/images/campusLineArt.jpeg"
             alt="Description for Accessibility"
             width={800}
             height={200}
           />
-        </div>
+        </div> */}
 
         <div>
           <Link href="https://github.com/emmanasseri" style={styles.linkButton}>
@@ -52,8 +52,8 @@ export default function Home() {
             <Image src="/images/icons/linkedin.png" width="70" height="70" />
           </Link>
         </div>
-        <div style={styles.csContainer} id="coding">
-          <h2 style={styles.centeredTitle}>i like to code!</h2>
+        <div style={styles.csContainer} id="coding" textAlign="center">
+          <h1 style={styles.centeredTitle}>I like to code!</h1>
           <div style={styles.githubChart}>
             <img
               src="http://ghchart.rshah.org/409ba5/emmanasseri"
@@ -106,6 +106,18 @@ const styles = {
     justifyContent: "center", // This centers the stackContainer items on the cross-axis (horizontally, since it's a column)
     marginBottom: "50px",
   },
+  headingContainer: {
+    display: "flex",
+    flexDirection: "column", // Stack items vertically
+    justifyContent: "center",
+    backgroundImage: "url('/images/sunset-clouds.jpg')", // Reference the image in the public folder
+    backgroundSize: "cover", // Ensure the image covers the entire container
+    backgroundPosition: "center", // Center the background image
+    backgroundRepeat: "no-repeat", // Prevent the image from repeating
+    minHeight: "100vh", // Ensure the div takes up the full viewport height
+    width: "100%", // Ensure it spans the full width
+    marginBottom: "50px",
+  },
   rowContainer: {
     display: "flex",
     flexDirection: "row", // Lay out items horizontally
@@ -116,10 +128,10 @@ const styles = {
   },
   aboutText: {
     margin: "20px", // adjust spacing as needed
+    fontSize: "36px", // adjust font size as needed
+    fontColor: "white", // adjust text color as needed
   },
-  lineArtContainer: {
-    marginBottom: "50px",
-  },
+
   imageContainer: {
     borderRadius: "50%",
     overflow: "hidden",
@@ -132,23 +144,52 @@ const styles = {
   profileImage: {
     borderRadius: "50%", // this will make the image circular
   },
+  signatureImage: {
+    width: "100%", // Make it responsive
+    maxWidth: "800px", // Set maximum width for larger screens
+    height: "auto", // Maintain aspect ratio
+  },
+  "@media (max-width: 768px)": {
+    signatureImage: {
+      maxWidth: "90%", // Shrink to 90% of the container on smaller screens
+    },
+    aboutText: {
+      fontSize: "24px", // Reduce font size on smaller screens
+    },
+  },
   linkButton: { margin: "20px" },
   githubLogo: {
     margin: "50px",
   },
   githubChart: {
     display: "flex",
-    justifyContent: "center", // Center items horizontally
-    alignItems: "center", // Center items vertically
+    justifyContent: "center",
+    alignItems: "center",
     marginBottom: "70px",
   },
+  "githubChart img": {
+    width: "auto",
+    height: "auto", // Default sizes for larger screens
+  },
+  "@media (max-width: 768px)": {
+    githubChart: {
+      marginBottom: "30px", // Adjust margin for smaller screens
+    },
+    "githubChart img": {
+      width: "50px", // Scale down to 50px width on small screens
+      height: "50px", // Scale down to 50px height on small screens
+    },
+  },
   csContainer: {
-    padding: "20px", // Adds some padding to the overall page
+    padding: "20px",
+    width: "100%",
+    height: "auto",
   },
   centeredTitle: {
     textAlign: "center",
     marginBottom: "20px", // Adds some space below the title
     marginTop: "20px",
+    fontSize: "xl",
   },
   cardsContainer: {
     display: "flex",
